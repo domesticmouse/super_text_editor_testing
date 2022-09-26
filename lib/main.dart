@@ -142,22 +142,25 @@ class _MyHomePageState extends State<MyHomePage> {
         title: const Text('SuperTextField testing'),
       ),
       body: SizedBox.expand(
-        child: SuperTextField(
-          controlsColor: Theme.of(context).focusColor,
-          lineHeight: 24,
-          minLines: 1,
-          maxLines: 10,
-          textController: textController,
-          textStyleBuilder: (attributes) {
-            final base = Theme.of(context).textTheme.bodyMedium!;
-            if (attributes.contains(stringAttribution)) {
-              return base.copyWith(color: Colors.blue[300]);
-            }
-            if (attributes.contains(nameAttribution)) {
-              return base.copyWith(color: Colors.green[600]);
-            }
-            return base;
-          },
+        child: Padding(
+          padding: const EdgeInsets.symmetric(horizontal: 8.0),
+          child: SuperTextField(
+            controlsColor: Theme.of(context).focusColor,
+            lineHeight: 24,
+            minLines: 1,
+            maxLines: 10,
+            textController: textController,
+            textStyleBuilder: (attributes) {
+              final base = Theme.of(context).textTheme.bodyMedium!;
+              if (attributes.contains(stringAttribution)) {
+                return base.copyWith(color: Colors.blue[300]);
+              }
+              if (attributes.contains(nameAttribution)) {
+                return base.copyWith(color: Colors.green[600]);
+              }
+              return base;
+            },
+          ),
         ),
       ),
     );
