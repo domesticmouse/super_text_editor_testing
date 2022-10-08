@@ -9,7 +9,11 @@ environment:
 dependencies:
   flutter:
     sdk: flutter
-  super_editor: ^0.2.2
+  super_editor: 
+    git: 
+      url: https://github.com/superlistapp/super_editor
+      path: super_editor
+
   svg_highlight:
     path: svg_highlight
 

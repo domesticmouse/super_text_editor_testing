@@ -123,6 +123,13 @@ packages:
     description: flutter
     source: sdk
     version: "0.0.0"
+  flutter_test_robots:
+    dependency: transitive
+    description:
+      name: flutter_test_robots
+      url: "https://pub.dartlang.org"
+    source: hosted
+    version: "0.0.17"
   frontend_server_client:
     dependency: transitive
     description:
@@ -341,9 +348,11 @@ packages:
   super_editor:
     dependency: "direct main"
     description:
-      name: super_editor
-      url: "https://pub.dartlang.org"
-    source: hosted
+      path: super_editor
+      ref: HEAD
+      resolved-ref: "376c0b6856f217b7364ee81cad41140f7132a570"
+      url: "https://github.com/superlistapp/super_editor"
+    source: git
     version: "0.2.2"
   super_text_layout:
     dependency: transitive
