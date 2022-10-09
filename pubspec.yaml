@@ -22,5 +22,11 @@ dev_dependencies:
     sdk: flutter
   flutter_lints: ^2.0.0
 
+dependency_overrides:
+  super_text_layout:
+    git: 
+      url: https://github.com/superlistapp/super_editor
+      path: super_text_layout
+
 flutter:
   uses-material-design: true
